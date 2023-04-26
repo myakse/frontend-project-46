@@ -1,5 +1,6 @@
 {
   "name": "@hexlet/code",
+  "type": "module",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/myakse/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/myakse/frontend-project-46/actions)",
   "main": "index.js",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/myakse/frontend-project-46/issues"
   },
-  "homepage": "https://github.com/myakse/frontend-project-46#readme"
+
+  "bin": {
+    "gendiff": "bin/gendiff.js"
+  },
+
+  "homepage": "https://github.com/myakse/frontend-project-46#readme",
+  "dependencies": {
+    "commander": "^10.0.1"
+  }
 }
