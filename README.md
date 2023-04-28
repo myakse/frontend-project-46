@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/myakse/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/myakse/frontend-project-46/actions)
-[![Maintainability](<a href="https://codeclimate.com/github/myakse/frontend-project-46/maintainability"><img src="https://api.codeclimate.com/v1/badges/9da93fe447855bfc6f2b/maintainability" /></a>)
+[![Maintainability](https://api.codeclimate.com/v1/badges/9da93fe447855bfc6f2b/maintainability)](https://codeclimate.com/github/myakse/frontend-project-46/maintainability)
 
 # Example of how the project works:
 **Comparison of flat files (JSON)**
