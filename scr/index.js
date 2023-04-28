@@ -15,7 +15,7 @@ const gendiff = (file1, file2) => {
             return `   ${key} : ${file1[key]}`;
         }        
         if (file1[key] !== file2[key]) {
-            return [` + ${key} : ${file1[key]}`,
+            return [` - ${key} : ${file1[key]}`,
             ` + ${key}: ${file2[key]}`];
         }
     });
