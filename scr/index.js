@@ -2,9 +2,10 @@ import { readFileSync } from 'fs';
 import _ from "lodash";
  
 const gendiff = (file1, file2) => {
-    const keys = _.sortBy(_.union(_.keys(file1), _.keys(file2)));
-        
-    const result = keys.map((key) => {
+    const keys = _.union(_.keys(file1), _.keys(file2));
+    const sortedKeys = _.sortBy(keys);
+    
+    const result = sortedKeys.map((key) => {
         if (!_.has(file1, key)) {
             return ` + ${key} : ${file2[key]}`;
         }
