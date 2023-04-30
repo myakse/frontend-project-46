@@ -3,7 +3,6 @@
 import { Command } from 'commander';
 import gendiff from '../scr/index.js';
 
-
 const program = new Command();
 
 program
