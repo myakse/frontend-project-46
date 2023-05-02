@@ -18,16 +18,16 @@ jobs:
         node-version: [18.x]
 
     steps:
-      - uses: actions/checkout@v3
-      - name: tests
+       uses: actions/checkout@v3
+       name: tests
         uses: actions/setup-node@v3
 
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: make install
-      - run: make lint
-      - name: Test & publish code coverage
+       run: make install
+       run: make lint
+       name: Test & publish code coverage
         uses: paambaati/codeclimate-action@v3.0.0
         env:
            CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
