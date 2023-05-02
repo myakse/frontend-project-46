@@ -19,6 +19,7 @@ const gendiff = (file1, file2) => {
       return [` - ${key} : ${file1[key]}`,
         ` + ${key}: ${file2[key]}`];
     }
+    return result;
   });
   return (`{\n ${result.flat().join('\n ')}\n}`);
 };
