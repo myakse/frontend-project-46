@@ -3,7 +3,49 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/9da93fe447855bfc6f2b/maintainability)](https://codeclimate.com/github/myakse/frontend-project-46/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/9da93fe447855bfc6f2b/test_coverage)](https://codeclimate.com/github/myakse/frontend-project-46/test_coverage)
 
+## Description: 
+__"The difference Calculator"__- is a program that determines the difference between two data structures.
+
+## Setup
+
+```bash
+make install
+```
+## Basic commands:
+
+* Get help output, parameter description:
+
+```bash
+gendiff -h
+```
+
+* Comparison of two files:
+
+```bash
+gendiff file1.json file2.json
+```
+or 
+
+```bash
+gendiff filepath1.yml filepath2.yml
+```
+
+## Testing:
+
+```bash
+make test
+```
+
+```bash
+make test-coverage
+```
+
 
 # Example of how the project works:
-**Comparison of flat files (JSON)**
+1. Comparison of flat files (JSON)
+
 [![asciicast](https://asciinema.org/a/f0NhxVztOPSWEMlVg3AAsDW3u.svg)](https://asciinema.org/a/f0NhxVztOPSWEMlVg3AAsDW3u)
+
+2. Сравнение плоских файлов (yaml) и автоматическое тестирование
+
+[![asciicast](https://asciinema.org/a/QlltJHF1qCtCwOuwDM3Xvug1Z.svg)](https://asciinema.org/a/QlltJHF1qCtCwOuwDM3Xvug1Z)
