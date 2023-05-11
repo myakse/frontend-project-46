@@ -46,6 +46,10 @@ make test-coverage
 
 [![asciicast](https://asciinema.org/a/f0NhxVztOPSWEMlVg3AAsDW3u.svg)](https://asciinema.org/a/f0NhxVztOPSWEMlVg3AAsDW3u)
 
-2. Сравнение плоских файлов (yaml) и автоматическое тестирование
+2. Flat file Comparison (YAML) and automated testing
 
 [![asciicast](https://asciinema.org/a/QlltJHF1qCtCwOuwDM3Xvug1Z.svg)](https://asciinema.org/a/QlltJHF1qCtCwOuwDM3Xvug1Z)
+
+3. Recursive comparison
+
+[![asciicast](https://asciinema.org/a/SfMfDFkPvuEFsffqO0N50UtMt.svg)](https://asciinema.org/a/SfMfDFkPvuEFsffqO0N50UtMt)
