@@ -27,7 +27,7 @@ gendiff file1.json file2.json
 or 
 
 ```bash
-gendiff filepath1.yml filepath2.yml
+gendiff file1.yml file2.yml
 ```
 
 ## Testing:
