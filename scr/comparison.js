@@ -6,21 +6,22 @@ const comparison = (file1, file2) => {
 
   const result = sortedKeys.map((key) => {
     if (!_.has(file1, key)) {
-      return ` + ${key} : ${file2[key]}`;
+      return { key, value: file2[key], type: 'added' };
     }
     if (!_.has(file2, key)) {
-      return ` - ${key} : ${file1[key]}`;
+      return { key, value: file1[key], type: 'deleted' };
     }
-    if (file1[key] === file2[key]) {
-      return `   ${key} : ${file1[key]}`;
+    if (_.isObject(file1[key]) && _.isObject(file2[key])) {
+      return { key, children: comparison(file1[key], file2[key]), type: 'nested' };
     }
     if (file1[key] !== file2[key]) {
-      return [` - ${key} : ${file1[key]}`,
-        ` + ${key}: ${file2[key]}`];
+      return {
+        key, value1: file1[key], value: file2[key], type: 'changed',
+      };
     }
-    return result;
+    return { key, value: file2[key], type: 'unchanged' };
   });
-  return (`{\n ${result.flat().join('\n ')}\n}`);
+  return result;
 };
 
 export default comparison;
