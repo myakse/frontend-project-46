@@ -57,3 +57,7 @@ make test-coverage
 4. Flat format
 
 [![asciicast](https://asciinema.org/a/F7jwPPPdPVM7R2gd49nAiDxp1.svg)](https://asciinema.org/a/F7jwPPPdPVM7R2gd49nAiDxp1)
+
+5. Output in json
+
+[![asciicast](https://asciinema.org/a/Y5irM4n7UpRBFPSp9s4XFGqda.svg)](https://asciinema.org/a/Y5irM4n7UpRBFPSp9s4XFGqda)
