@@ -1,22 +1,23 @@
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path';
-import fs from 'fs';
+import { readFileSync } from 'fs';
 import gendiff from '../scr/index.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
-const readFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8');
 
-test('cheсk json stylish', () => {
-  const expected = readFile('resultStylish.txt');
-  const actual = gendiff(getFixturePath('file1.json'), getFixturePath('file2.json'));
-  expect(actual).toBe(expected);
-});
+const stylish = readFileSync(path.resolve(process.cwd(), '__fixtures__/resultStylish.txt'), 'utf-8');
+const plain = readFileSync(path.resolve(process.cwd(), '__fixtures__/resultPlain.txt'), 'utf-8');
 
-test('check yaml stylish', () => {
-  const expected = readFile('resultStylish.txt');
-  const actual = gendiff(getFixturePath('file1.yaml'), getFixturePath('file2.yaml'));
-  expect(actual).toBe(expected);
+const extensions = ['json', 'yaml'];
+
+test.each(extensions)('%s extensions ', (extention) => {
+  const file1 = getFixturePath(`file1.${extention}`);
+  const file2 = getFixturePath(`file2.${extention}`);
+
+  expect(gendiff(file1, file2)).toEqual(stylish);
+  expect(gendiff(file1, file2, 'stylish')).toEqual(stylish);
+  expect(gendiff(file1, file2, 'plain')).toEqual(plain);
 });

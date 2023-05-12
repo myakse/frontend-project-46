@@ -53,3 +53,7 @@ make test-coverage
 3. Recursive comparison
 
 [![asciicast](https://asciinema.org/a/SfMfDFkPvuEFsffqO0N50UtMt.svg)](https://asciinema.org/a/SfMfDFkPvuEFsffqO0N50UtMt)
+
+4. Flat format
+
+[![asciicast](https://asciinema.org/a/F7jwPPPdPVM7R2gd49nAiDxp1.svg)](https://asciinema.org/a/F7jwPPPdPVM7R2gd49nAiDxp1)
