@@ -3,13 +3,17 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/9da93fe447855bfc6f2b/maintainability)](https://codeclimate.com/github/myakse/frontend-project-46/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/9da93fe447855bfc6f2b/test_coverage)](https://codeclimate.com/github/myakse/frontend-project-46/test_coverage)
 
-## Description: 
+## Project Description:: 
 __"The difference Calculator"__- is a program that determines the difference between two data structures.
 
-## Setup
+# Installation instructions:
+1. Clone the repository locally
+`git clone git@github.com:myakse/frontend-project-46.git`
+2. Go to the created directory
+`cd frontend-project-46.git`
+3. Install Dependencies
+`make install`
 
-```bash
-make install
 ```
 ## Basic commands:
 
