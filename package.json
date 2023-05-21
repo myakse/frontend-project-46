@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "description": "Calculator of differences between two files",
   "main": "src/index.js",
+  "bin": {
+    "gendiff": "bin/gendiff.js"
+  },
   "scripts": {
     "test": "npx jest"
   },
