@@ -11,7 +11,7 @@ const readFile = (filename) => readFileSync(getFixturePath(filename), 'utf-8');
 
 const extensions = ['json', 'yaml'];
 
-test.each(extensions)('%s extensions ', (extention) => {
+test.each(extensions)('%s extensions', (extention) => {
   const file1 = getFixturePath(`file1.${extention}`);
   const file2 = getFixturePath(`file2.${extention}`);
 
